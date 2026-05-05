@@ -1,104 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-subids
   async
   defer
 ></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Verificação</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      color: #333;
-    }
 
-    .container {
-      background: #fff;
-      padding: 40px 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 400px;
-      width: 90%;
-      animation: fadeIn 1s ease-in-out;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+<title>Verificação</title>
 
-    h2 {
-      margin-bottom: 30px;
-      font-weight: 600;
-      color: #222;
-    }
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 24px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .btn:hover {
-      background-color: #388e3c;
-    }
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333;
+  }
 
-    .links {
-      margin-top: 25px;
-      font-size: 14px;
-    }
+  .container {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 20px;
 
-    .links a {
-      margin: 0 10px;
-      color: #007bff;
-      text-decoration: none;
-    }
+    box-shadow: 
+      0 10px 30px rgba(0,0,0,0.08),
+      0 0 0 1px rgba(0,0,0,0.05);
 
-    .links a:hover {
-      text-decoration: underline;
-    }
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
 
-    footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #777;
-      text-align: center;
-    }
-  </style>
+    animation: fadeIn 0.7s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #222;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #4CAF50, #43a047);
+    color: #fff;
+
+    box-shadow: 0 8px 20px rgba(76,175,80,0.4);
+    transition: all 0.25s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(76,175,80,0.5);
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  .links {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+  }
+
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.2s;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #999;
+  }
+
+</style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h2>Verificação de Segurança</h2>
-    <a href="https://encceja2026.vercel.app/inicio/" class="btn">Eu não sou um robô e quero seguir</a>
+<div class="container">
+  <h2>Verificação de Segurança</h2>
+  <p>Confirme que você não é um robô para continuar.</p>
 
-    <div class="links">
-      <a href="#">Política de Privacidade</a> |
-      <a href="#">Termos de Uso</a>
-    </div>
+  <a href="https://encceja2026.vercel.app/inicio/" class="btn">
+    Eu não sou um robô e quero seguir
+  </a>
+
+  <div class="links">
+    <a href="#">Política de Privacidade</a> |
+    <a href="#">Termos de Uso</a>
   </div>
+</div>
 
-  <footer>
-    &copy; 2026 Todos os direitos reservados.
-  </footer>
+<footer>
+  © 2026 Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
